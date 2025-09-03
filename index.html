@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Five Nights At Freddy</title>
-    <link rel="shortcut icon" href="/assets/icons/favicon" type="image/x-icon">
+    <title>Arcade Love</title>
+    <link rel="shortcut icon" href="/assets/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/styles/index.css">
-    
+
 </head>
-<body onload="loading()">
+<body>
+    <audio src="/assets/audios/background-sound.mp3" id="back-sound" loop autoplay></audio>
+    
+    <section id="Menu">
+        <div id="particles-js"></div>
+    
+        <div id="Buttons">
+            <h1 class="title">🕹️ LOVE ARCADE 💘</h1>
+            <ul id="Button-List">
+                <li><button >▶ Jogar Modo Amor</button></li>
+                <li><button >👾 Batalha de Beijos</button></li>
+                <li><button >📸 Galeria de Memórias</button></li>
+                <li><button >🎁 Surpresas Românticas</button></li>
+                <li><button >⚙️ Ajustes do Relacionamento</button></li>
+                <li><button >🚪 Sair do Fliper (mas não do coração)</button></li>
+            </ul>
+        </div>
+    </section>
     
     <script type="module" src="/assets/scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/assets/scripts/particles-config.js"></script>
+    <script src="/assets/scripts/sound.js"></script>
 </body>
 </html>
